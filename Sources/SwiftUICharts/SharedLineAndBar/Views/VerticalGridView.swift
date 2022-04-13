@@ -28,11 +28,11 @@ internal struct VerticalGridView<T>: View where T: CTLineBarChartDataProtocol {
                                        dash: chartData.chartStyle.xAxisGridStyle.dash,
                                        dashPhase: chartData.chartStyle.xAxisGridStyle.dashPhase))
             .frame(width: chartData.chartStyle.xAxisGridStyle.lineWidth)
-            .animateOnAppear(using: chartData.chartStyle.globalAnimation) {
-                self.startAnimation = true
-            }
-            .animateOnDisappear(using: chartData.chartStyle.globalAnimation) {
-                self.startAnimation = false
-            }
+//             .animateOnAppear(using: chartData.chartStyle.globalAnimation) {
+//                 self.startAnimation = true
+//             }
+//             .animateOnDisappear(using: chartData.chartStyle.globalAnimation) {
+//                 self.startAnimation = false
+//             }
     }
 }
